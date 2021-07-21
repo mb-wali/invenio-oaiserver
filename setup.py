@@ -2,6 +2,7 @@
 #
 # This file is part of Invenio.
 # Copyright (C) 2015-2019 CERN.
+# Copyright (C)      2021 Graz University of Technology.
 #
 # Invenio is free software; you can redistribute it and/or modify it
 # under the terms of the MIT License; see LICENSE file for more details.
@@ -136,6 +137,9 @@ setup(
         ],
         'invenio_pidstore.fetchers': [
             'oaiid = invenio_oaiserver.fetchers:oaiid_fetcher',
+        ],
+        'invenio_i18n.translations': [
+            'invenio_oaiserver = invenio_oaiserver',
         ],
     },
     extras_require=extras_require,
