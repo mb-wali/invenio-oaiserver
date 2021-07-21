@@ -35,7 +35,7 @@ extras_require = {
         'invenio-celery>=1.2.0',
     ],
     'docs': [
-        'Sphinx>=3',
+        'Sphinx>=3.3.1,<3.4.2',
     ],
     # Elasticsearch
     'elasticsearch2': [
@@ -52,13 +52,13 @@ extras_require = {
     ],
     # Database
     'mysql': [
-        'invenio-db[mysql]>=1.0.0',
+        'invenio-db[mysql]>=1.0.9',
     ],
     'postgresql': [
-        'invenio-db[postgresql]>=1.0.4',
+        'invenio-db[postgresql]>=1.0.9',
     ],
     'sqlite': [
-        'invenio-db>=1.0.0',
+        'invenio-db>=1.0.9',
     ],
     'tests': tests_require,
 }
@@ -80,9 +80,9 @@ setup_requires = [
 install_requires = [
     'arrow>=0.13.0',
     'dojson>=1.3.0',
-    'invenio-base>=1.2.2',
+    'invenio-base>=1.2.4',
     'invenio-i18n>=1.2.0',
-    'invenio-pidstore>=1.2.0',
+    'invenio-pidstore>=1.2.2',
     'invenio-records>=1.3.0',
     'invenio-rest>=1.2.1',
     'lxml>=4.3.0',
